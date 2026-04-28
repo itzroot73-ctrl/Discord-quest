@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nexus-api
+    env: node
+    buildCommand: npm install && npx tsc
+    startCommand: node dist/index.js
